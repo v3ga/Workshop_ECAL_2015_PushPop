@@ -37,19 +37,20 @@ void stop()
 // ------------------------------------------------------
 void websocketOnMessage(WebSocketConnection con, String msg) 
 {
-  println("data from : "+ socket.getIP(con) );
+  // println("data from : "+ socket.getIP(con) );
+  println(msg);
+  socket.broadcast(msg);
 }
 
 // ------------------------------------------------------
 void websocketOnOpen(WebSocketConnection con) 
 {
   println("A client joined : "+ socket.getIP(con) );
-
 }
 
 // ------------------------------------------------------
 void websocketOnClosed(WebSocketConnection con) 
 {
-   println("A client left");
+   // println("A client left");
 }
 
