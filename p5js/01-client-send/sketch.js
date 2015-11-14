@@ -12,7 +12,7 @@ function draw()
 }
 
 // --------------------------------------------
-function mouseDragged()
+function mouseMoved()
 {
   var data = {
     x: mouseX,

@@ -2,13 +2,13 @@
 import org.webbitserver.*;
 
 // ------------------------------------------------------
-WebSocketP5 socket;
+WebSocketServerP5 socket;
 
 // ------------------------------------------------------
 void setup() 
 {
   size( 800, 600 );
-  socket = new WebSocketP5( this, 12345 );
+  socket = new WebSocketServerP5( this, 12345 );
 }
 
 // ------------------------------------------------------
@@ -38,7 +38,7 @@ void stop()
 void websocketOnMessage(WebSocketConnection con, String msg) 
 {
   // println("data from : "+ socket.getIP(con) );
-  println(msg);
+  //println(msg);
   socket.broadcast(msg);
 }
 

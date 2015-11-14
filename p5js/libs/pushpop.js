@@ -8,7 +8,8 @@ function connect(server)
 	{
 		if (typeof onMessage == 'function')
 		{
-		  	onMessage( JSON.parse(e.data).data );
+			println(e.data);
+		  	onMessage( eval(JSON.parse(e.data).data) );
 		}
 	}
 
@@ -32,6 +33,7 @@ function send()
 			else if (arguments.length == 3)
 				command = {ip : ip, func : arguments[1], data : arguments[2]};
 		
+			console.log( JSON.stringify( command ) );
 			websocket.send( JSON.stringify( command ) );
 		}
 		else

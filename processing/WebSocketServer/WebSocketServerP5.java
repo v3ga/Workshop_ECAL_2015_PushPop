@@ -40,7 +40,7 @@ import org.webbitserver.handler.*;
  */
 
 
-public class WebSocketP5 implements WebSocketHandler {
+public class WebSocketServerP5 implements WebSocketHandler {
   // Reference to the sketch
   PApplet                    parent;
 
@@ -70,15 +70,15 @@ public class WebSocketP5 implements WebSocketHandler {
    *          ws://<servername>/mysocket
    * 
    */
-  public WebSocketP5(PApplet theParent) {
+  public WebSocketServerP5(PApplet theParent) {
     this(theParent, 8080, DEFAULT_SOCKET);
   }
 
-  public WebSocketP5(PApplet theParent, int port) {
+  public WebSocketServerP5(PApplet theParent, int port) {
     this(theParent, port, DEFAULT_SOCKET);
   }
 
-  public WebSocketP5(PApplet theParent, int port, String socketname) {
+  public WebSocketServerP5(PApplet theParent, int port, String socketname) {
     parent = theParent;
     this.port = port;
     this.socketname = socketname;

@@ -18,5 +18,6 @@ function draw()
 function onMessage(data)
 {
 	msg = data;
+	console.log(msg);
 }
 
