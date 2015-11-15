@@ -2,9 +2,20 @@
 
 # Interface de programmation
 ## Processing
+
 Se connecter au serveur
-```
+```processing
 void connect(String uri);
+```
+
+Envoyer des données au format JSON à tous les sketchs connectés au serveur
+```processing
+void send(JSONObject data);
+```
+
+Envoyer des données au format JSON à un sketch d'une machine identifiée par une IP
+```processing
+void sendIP(String ip, JSONObject data);
 ```
 
 
