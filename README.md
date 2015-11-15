@@ -12,7 +12,7 @@ void sendIP(String ip, JSONObject data);
 ```
 
 ## p5.js
-```p5.js
+```javascript
 // Se connecter au serveur
 connect(uri);
 // Envoyer des données au format JSON à tous les sketchs connectés au serveur
