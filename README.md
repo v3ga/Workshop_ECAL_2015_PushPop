@@ -37,13 +37,15 @@ void sendIP(String ip, JSONObject data);
 
 
 #### p5.js
-```p5.js
+```javascript
 // Se connecter au serveur
-connect(uri);
-// Envoyer des données au format JSON à tous les sketchs connectés au serveur
-send(data);
+function connect(uri){...}
+// Envoyer des données à tous les sketchs connectés au serveur
+// data est un objet javascript encodé en JSON par la librairie
+function send(data){...}
 // Envoyer des données au format JSON à un sketch d'une machine identifiée par une IP
-sendIP(ip,data);
+// data est un objet javascript encodé en JSON par la librairie
+function sendIP(ip,data){...}
 ```
 
 
