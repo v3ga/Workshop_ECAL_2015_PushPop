@@ -10,9 +10,12 @@ void send(JSONObject data);
 // Envoyer des données au format JSON à un sketch d'une machine identifiée par une IP
 void sendIP(String ip, JSONObject data);
 ```
+### exemples
+* Envoi de données au serveur
+* Envoi de données à une machine
 
 ## p5.js
-```javascript
+```p5.js
 // Se connecter au serveur
 connect(uri);
 // Envoyer des données au format JSON à tous les sketchs connectés au serveur
