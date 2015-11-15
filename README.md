@@ -1,7 +1,7 @@
 # Push Pop
 *Atelier de création par le code à l'ECAL du 16 au 20 Novembre 2015*
 
-Travailler, forger, transformer, traiter, communiquer des données entre machines programmables pour fabriquer une installation visuelle et sonore sur le principe du cadavre exquis.
+Travailler, forger, transformer, traiter, triturer, communiquer des données entre machines programmables pour fabriquer une installation visuelle et sonore sur le principe du cadavre exquis.
 
 ![alt André Breton](http://masmoulin.blog.lemonde.fr/files/2012/02/Cadavre-exquis_Andr%C3%A9-Breton-Goemans-Camille-Jacques-Pr%C3%A9vert-Yves-Tanguy.png)
 
@@ -13,9 +13,14 @@ Travailler, forger, transformer, traiter, communiquer des données entre machine
 
 
 ### Scénographie 
+Imaginer une installation avec des écrans (ordinateurs, téléphones portables, tablettes) qui mettent en application cette idée de cadavre exquis. Les règles pourraient être les suivantes :
+* chaque participant doit recevoir des données d'un participant «précédent».
+* chaque participant doit traiter visuellement les données reçues et transmettre des données au participant «suivant».
+* le premier participant de la chaîne est libre du choix des modalités des données entrantes.
 
+Le traitement des données ne sera pas instantané, un délai entre la réception et l’émission sera introduit par une «fonction de transfert» et pourra être influencé par des paramètres externes.
 
-Le traitement des données ne doit pas être instantané, un délai entre la réception et l’émission doit être introduit.
+![alt Atelier Processing Toulouse](https://farm9.staticflickr.com/8532/8581354948_177de9c03b_z.jpg)
 
 
 ### Interface de programmation
