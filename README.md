@@ -1,6 +1,14 @@
 # Push Pop
 
-## References
+# Interface de programmation
+## Processing
+Se connecter au serveur
+```
+void connect(String uri);
+```
+
+
+## Liens
 ### Processing
 * wsp5 — https://github.com/labatrockwell/wsp5
 * WebsocketP5 — https://github.com/muthesius/WebSocketp5 (basée sur http://webbitserver.org/)
