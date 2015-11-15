@@ -1,5 +1,10 @@
+// ------------------------------------------------------
 var websocket;
 
+// ------------------------------------------------------
+var websocket_debug = false;
+
+// ------------------------------------------------------
 function connect(server)
 {
 	websocket = new WebSocket(server);
@@ -15,32 +20,56 @@ function connect(server)
 
 	websocket.onerror = function(e)
 	{
-		console.log("pushpop.js - "+e);
+		console.log("pushpop.js - erreur : "+e);
 	}
 }
 
+// ------------------------------------------------------
 function send()
 {
 	if (websocket)
 	{
-		if (arguments.length >=1 || arguments.length <= 3)
+		if (arguments.length ==1 || arguments.length == 2)
 		{
-			var command;
-			if (arguments.length == 1)
-				command = {data : arguments[0]};
-			if (arguments.length == 2)
-				command = {ip : ip, data : arguments[1]};
-			else if (arguments.length == 3)
-				command = {ip : ip, func : arguments[1], data : arguments[2]};
+			var dataEmbed;
+			if (arguments.length == 1)		dataEmbed = {data : arguments[0]};
+			if (arguments.length == 2)		dataEmbed = {destination : arguments[0], data : arguments[1]};
 		
-			console.log( JSON.stringify( command ) );
-			websocket.send( JSON.stringify( command ) );
+			var dataEmbedJSON = JSON.stringify( dataEmbed );
+			
+			websocket.send( dataEmbedJSON );
+
+			if (websocket_debug)
+				console.log( dataEmbedJSON );
 		}
 		else
-			console("pushpop.js - send() - invalid number of arguments");
+			console("pushpop.js - send() - le nombre d'arguments n'est pas valide (1 ou 2)");
 	}
 	else
 	{
-		console.log("pushpop.js - send() - call connect() first");
+		console.log("pushpop.js - send() - appeler la fonction connect() d'abord");
+	}
+}
+
+// ------------------------------------------------------
+function sendIP()
+{
+	if (websocket)
+	{
+		if (arguments.length == 2)
+		{
+			var dataEmbed = {ip : arguments[0], data : arguments[1]};
+			var dataEmbedJSON = JSON.stringify( dataEmbed );
+			websocket.send( dataEmbedJSON );
+
+			if (websocket_debug)
+				console.log( dataEmbedJSON );
+		}
+		else
+			console("pushpop.js - send() - le nombre d'arguments n'est pas valide (2)");
+	}
+	else
+	{
+		console.log("pushpop.js - send() - appeler la fonction connect() d'abord");
 	}
 }

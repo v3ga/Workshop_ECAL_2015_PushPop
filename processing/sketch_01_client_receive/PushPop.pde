@@ -53,6 +53,7 @@ void send(String msg)
 // à la fonction onMessage du sketch
 void onWsMessage( String msg )
 {
+  println(msg);
   JSONObject data = JSONObject.parse( msg );
   
   // Si le message contient une clé «data», alors on transmet

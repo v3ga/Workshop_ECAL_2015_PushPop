@@ -15,10 +15,17 @@ wsp5
 String URL_SERVER = "ws://MacBook-Pro-de-Julien.local:12345/p5websocket";
 
 // ------------------------------------------------------
+// Stockage du dernier message reçu
+JSONObject msg;
+
+// ------------------------------------------------------
 void setup()
 {
   // Taille de la fenêtre de travail
   size(500,500);
+  
+  // Titre de la fenêtre
+  frame.setTitle("Client (réception de données)");
   
   // Connexion au serveur
   // (surveiller la console pour voir les erreurs éventuelles)
@@ -28,18 +35,18 @@ void setup()
 // ------------------------------------------------------
 void draw()
 {
-}
-
-// ------------------------------------------------------
-void mouseMoved()
-{
-  // Les données au serveur sont transmise au format JSON
-  JSONObject data = new JSONObject();
-  data.setFloat("x", mouseX);  
-  data.setFloat("y", mouseY);  
-
-  // Envoi des données 
-  send(data);
+  // On vérifie bien que la variable valide
+  if (msg != null)
+  {
+    // On extrait les données
+    // Le format doit être conforme aux données envoyées 
+    // On peut vérifier si une clé existe avec la fonction msg.hasKey("x") par exemple
+    float x = msg.getFloat("x");
+    float y = msg.getFloat("y");
+    
+    // On utilise ces variables pour dessiner
+    ellipse(x,y,50,50);
+  }
 }
 
 // ------------------------------------------------------
@@ -47,6 +54,7 @@ void mouseMoved()
 // envoyées par le serveur
 void onMessage(JSONObject data)
 {
+  msg = data;
 }
 
 

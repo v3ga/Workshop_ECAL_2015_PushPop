@@ -1,8 +1,11 @@
 // --------------------------------------------
+var URL_SERVER = "ws://MacBook-Pro-de-Julien.local:12345/p5websocket";
+
+// --------------------------------------------
 function setup()
 {
   	createCanvas(500, 500);
-	connect("ws://MacBook-Pro-de-Julien.local:12345/p5websocket");
+	connect(URL_SERVER);
 }
 
 // --------------------------------------------
@@ -14,7 +17,9 @@ function draw()
 // --------------------------------------------
 function mouseMoved()
 {
-  var data = {
+  // On fabrique un objet Javascript (qui sera transformé en JSON par la fonction send())
+  var data =
+  {
     x: mouseX,
     y: mouseY
   };
