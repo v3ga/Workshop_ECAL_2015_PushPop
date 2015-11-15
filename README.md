@@ -1,4 +1,12 @@
 # Push Pop
+Travailler, forger, transformer, traiter, communiquer des données entre participants pour produire fabriquer une installation visuelle et sonore sur le principe du cadavre exquis.
+
+Le premier groupe choisit le format de l’entrée, transforme les données et les transmet au deuxième groupe.
+Un groupe dans la chaîne reçoit des données du groupe précédent, les transforme et les transmet au groupe suivant.
+Le dernier groupe reçoit les données de l’avant dernier groupe, les transforme et choisit un format de sortie.
+
+Le traitement des données ne doit pas être instantané, un délai entre la réception et l’émission doit être introduit.
+
 
 # Interface de programmation
 ## Processing
@@ -31,5 +39,9 @@ sendIP(ip,data);
 * WebsocketP5 — https://github.com/muthesius/WebSocketp5 (basée sur http://webbitserver.org/)
 
 ### Javascript
-* Shake.js — https://github.com/alexgibson/shake.js/
-* Gyrojs — http://tomg.co/gyrojs
+Quelques librairies à exploiter : 
+
+* **Mobile**
+  * Shake.js — https://github.com/alexgibson/shake.js/
+  * Gyrojs — http://tomg.co/gyrojs
+  * p5.speech — http://abilitylab.nyu.edu/p5.js-speech/
