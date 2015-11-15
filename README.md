@@ -2,7 +2,6 @@
 
 # Interface de programmation
 ## Processing
-
 ```processing
 // Se connecter au serveur
 void connect(String uri);
@@ -12,6 +11,15 @@ void send(JSONObject data);
 void sendIP(String ip, JSONObject data);
 ```
 
+## p5.js
+```p5.js
+// Se connecter au serveur
+connect(uri);
+// Envoyer des données au format JSON à tous les sketchs connectés au serveur
+send(data);
+// Envoyer des données au format JSON à un sketch d'une machine identifiée par une IP
+sendIP(ip,data);
+```
 
 
 ## Liens
