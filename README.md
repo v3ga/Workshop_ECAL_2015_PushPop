@@ -23,7 +23,7 @@ Le traitement des données ne sera pas instantané, un délai entre la réceptio
 ![alt Atelier Processing Toulouse](https://farm9.staticflickr.com/8532/8581354948_177de9c03b_z.jpg)
 
 
-### Interface de programmation
+### Programmation
 Les sketches communiqueront entre eux par le biais d'envoi de données à un serveur dont le rôle sera d'écouter les messages entrants et de les redistribuer. Un «client» est un sketch qui se connecte au serveur pour communiquer des données à d'autres clients. Le format d'échange de données est le JSON.
 
 Le **serveur** a été développé avec une version modifiée de WebsocketP5 ( https://github.com/muthesius/WebSocketp5 )
