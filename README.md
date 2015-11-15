@@ -18,7 +18,7 @@ Imaginer une installation avec des écrans (ordinateurs, téléphones portables,
 * chaque participant doit traiter visuellement les données reçues et transmettre des données au participant «suivant».
 * le premier participant de la chaîne est libre du choix des modalités des données entrantes.
 
-Le traitement des données ne sera pas instantané, un délai entre la réception et l’émission sera introduit par une «fonction de transfert» et pourra être influencé par des paramètres externes.
+Le traitement des données ne sera pas instantané, un délai entre la réception et l’émission sera introduit et pourra être influencé / perturbé par des interactions externes.
 
 ![alt Atelier Processing Toulouse](https://farm9.staticflickr.com/8532/8581354948_177de9c03b_z.jpg)
 
