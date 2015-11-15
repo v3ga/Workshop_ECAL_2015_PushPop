@@ -8,7 +8,7 @@ Travailler, forger, transformer, traiter, communiquer des données entre machine
 
 * https://fr.wikipedia.org/wiki/Cadavre_exquis_(jeu)#Arts_graphiques
 * Input/Output de Terry Timely & Park Pictures — https://vimeo.com/141567420
-* Translations de Pauline Gourlet — http://www.ensad.fr/projets/translations
+* Translations de Pauline Gourlet — http://translations.ensad.fr/
 * Émissions « Tac au tac » dans les années 70 — https://www.youtube.com/watch?v=hIVbL-Vv0is
 
 
