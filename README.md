@@ -22,7 +22,7 @@ Le traitement des données ne doit pas être instantané, un délai entre la ré
 Les sketches communiqueront entre eux par le biais d'envoi de données à un serveur dont le rôle sera d'écouter les messages entrants et de les redistribuer. Un «client» est un sketch qui se connecte au serveur pour communiquer des données à d'autres clients. Le format d'échange de données est le JSON.
 
 Le **serveur** a été développé avec une version modifiée de WebsocketP5 ( https://github.com/muthesius/WebSocketp5 )
-L'interface **client** a été développée avec Processing (version 2.1.1) et p5.js (version 0.4.19). Pour utiliser la version client dans Processing, il sera nécessaire d'installer la librairie **wsp5** (https://github.com/labatrockwell/wsp5). 
+L'interface **client** a été développée avec Processing (*version 2.1.1*) et p5.js (*version 0.4.19*). Pour utiliser la version client dans Processing, il sera nécessaire d'installer la librairie **wsp5** (https://github.com/labatrockwell/wsp5). 
 
 
 #### Processing
