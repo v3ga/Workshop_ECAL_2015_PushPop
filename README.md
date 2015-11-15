@@ -18,8 +18,14 @@ Travailler, forger, transformer, traiter, communiquer des données entre machine
 Le traitement des données ne doit pas être instantané, un délai entre la réception et l’émission doit être introduit.
 
 
-## Interface de programmation
-### Processing
+### Interface de programmation
+Les sketches communiqueront entre eux par le biais d'envoi de données à un serveur dont le rôle sera d'écouter les messages entrants et de les redistribuer. Un «client» est un sketch qui se connecte au serveur pour communiquer des données à d'autres clients. Le format d'échange de données est le JSON.
+
+Le serveur a été développé avec une version modifiée de WebsocketP5 ( https://github.com/muthesius/WebSocketp5 )
+L'interface client a été développée avec Processing (version 2.1.1) et p5.js (version 0.4.19)  
+
+
+#### Processing
 ```processing
 // Se connecter au serveur
 void connect(String uri);
@@ -28,11 +34,9 @@ void send(JSONObject data);
 // Envoyer des données au format JSON à un sketch d'une machine identifiée par une IP
 void sendIP(String ip, JSONObject data);
 ```
-#### exemples
-* Envoi de données au serveur
-* Envoi de données à une machine
 
-### p5.js
+
+#### p5.js
 ```p5.js
 // Se connecter au serveur
 connect(uri);
@@ -43,15 +47,15 @@ sendIP(ip,data);
 ```
 
 
-## Liens
-### Websockets
+### Liens
+#### Websockets
 * https://fr.wikipedia.org/wiki/WebSocket
 
-### Processing
+#### Processing
 * wsp5 — https://github.com/labatrockwell/wsp5
 * WebsocketP5 — https://github.com/muthesius/WebSocketp5 (basée sur http://webbitserver.org/)
 
-### Javascript
+#### Javascript
 Quelques librairies à exploiter : 
 
 * **Mobile**
