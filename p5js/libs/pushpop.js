@@ -13,7 +13,8 @@ function connect(server)
 	{
 		if (typeof onMessage == 'function')
 		{
-			println(e.data);
+			if (websocket_debug)
+				console.log(e.data);
 		  	onMessage( eval(JSON.parse(e.data).data) );
 		}
 	}
@@ -33,7 +34,7 @@ function send()
 		{
 			var dataEmbed;
 			if (arguments.length == 1)		dataEmbed = {data : arguments[0]};
-			if (arguments.length == 2)		dataEmbed = {destination : arguments[0], data : arguments[1]};
+			if (arguments.length == 2)		dataEmbed = {ip : arguments[0], data : arguments[1]};
 		
 			var dataEmbedJSON = JSON.stringify( dataEmbed );
 			
@@ -43,7 +44,7 @@ function send()
 				console.log( dataEmbedJSON );
 		}
 		else
-			console("pushpop.js - send() - le nombre d'arguments n'est pas valide (1 ou 2)");
+			console.log("pushpop.js - send() - le nombre d'arguments n'est pas valide (1 ou 2)");
 	}
 	else
 	{

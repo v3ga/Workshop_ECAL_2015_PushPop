@@ -6,11 +6,13 @@ import org.webbitserver.*;
 WebSocketServerP5 socket;
 
 // Liste qui associe ip <-> destinations
+HashMap<String, String> mapDestinations = new HashMap<String,String>();
 
 // ------------------------------------------------------
 void setup() 
 {
   size( 400, 400 );
+  loadDestinations();
   socket = new WebSocketServerP5( this, 12345 );
   frame.setTitle("Serveur");
 }
@@ -21,9 +23,12 @@ void draw()
   background(255);
   // Imprime la liste des connexions
   String s="";
-  for (WebSocketConnection connection : socket.connections)
+  synchronized(socket.connections)
   {
-    s+= socket.getIP( connection )+"\n";
+    for (WebSocketConnection connection : socket.connections)
+    {
+      s+= socket.getIP( connection )+"\n";
+    }
   }
   fill(0);
   text(s,5,12);
@@ -37,6 +42,12 @@ void stop()
 
 
 // ------------------------------------------------------
+void loadDestinations()
+{
+  //XML xml = loadXML(config);
+}
+
+// ------------------------------------------------------
 void websocketOnMessage(WebSocketConnection con, String msg) 
 {
   JSONObject msgJson = JSONObject.parse(msg);
@@ -47,12 +58,14 @@ void websocketOnMessage(WebSocketConnection con, String msg)
   }
   else if (msgJson.hasKey("ip"))
   {
-    
-    WebSocketConnection client = socket.getWebSocketConnectionByIP( msgJson.getString("ip") );
-    if (client != null)
+    ArrayList<WebSocketConnection> listClients = getAllWebSocketConnectionByIP( msgJson.getString("ip") );   
+    for (WebSocketConnection client : listClients)
     {
-      println("sending to destination "+msgJson.getString("ip"));
-      client.send( msg );
+      if (client != null)
+      {
+        // println("sending to destination "+msgJson.getString("ip"));
+        client.send( msg );
+      }
     }
   }
   // Transmet le message à tous les clients sans distinction

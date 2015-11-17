@@ -217,6 +217,20 @@ public class WebSocketServerP5 implements WebSocketHandler {
     }
     return null;
   }
+
+  // Because a ip can be connected multiple times
+  ArrayList<WebSocketConnection> listIPs = new ArrayList<WebSocketConnection>();
+  synchronized public ArrayList<WebSocketConnection> getAllWebSocketConnectionByIP(String ip)
+  {
+    for (WebSocketConnection c : connections)
+    {
+      if (getIP(c).equals(ip))
+        listIPs.add( c );
+    }
+    return listIPs;
+  }
+  
+  
   
   public String getIP(WebSocketConnection con)
   {
