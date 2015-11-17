@@ -64,9 +64,9 @@ function sendIP(ip,data){...}
 
 #### Javascript
 Quelques librairies à exploiter : 
-* Matter.js — http://brm.io/matter-js-demo/
+* Matter.js — http://brm.io/matter-js-demo/ — librairie simulation physique en 2D
 
 * **Mobile**
-  * Shake.js — https://github.com/alexgibson/shake.js/
-  * Gyrojs — http://tomg.co/gyrojs
+  * Shake.js — https://github.com/alexgibson/shake.js/ — détection évènement «shake»
+  * Gyrojs — http://tomg.co/gyrojs 
   * p5.speech — http://abilitylab.nyu.edu/p5.js-speech/
