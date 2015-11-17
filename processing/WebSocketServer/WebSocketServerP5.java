@@ -222,6 +222,7 @@ public class WebSocketServerP5 implements WebSocketHandler {
   ArrayList<WebSocketConnection> listIPs = new ArrayList<WebSocketConnection>();
   synchronized public ArrayList<WebSocketConnection> getAllWebSocketConnectionByIP(String ip)
   {
+    listIPs.clear();
     for (WebSocketConnection c : connections)
     {
       if (getIP(c).equals(ip))

@@ -1,6 +1,6 @@
 // --------------------------------------------
-var URL_SERVER = "ws://MacBook-Pro-de-Julien-2.local:12345/p5websocket";
-var IP_VOISIN = "192.168.10.118";
+var URL_SERVER = "ws://10.192.250.138:12345/p5websocket";
+var IP_VOISIN = "10.192.232.32";
 
 // Tableau qui va contenir une liste d'objets
 var listObjects = [];
@@ -39,9 +39,10 @@ function draw()
 // --------------------------------------------
 function onMessage(otherObject)
 {
+	// console.log(otherObject);
 	// «otherObject» contient l'objet reçu par ce sketch
 	// à partir de ces propriétés on va créer un objet du type qui est définit ici, dans ce sketch
-	if (otherObject.name == "circle")
+	// if (otherObject.name == "circle")
 	{
 		// console.log("received " + otherObject);
 		var myObject = new MyObject(0, otherObject.y);
@@ -63,7 +64,7 @@ function MyObject(x_, y_)
 	this.y = y_;
 	// > vitesse
 	this.vx = random(3,6);
-	this.vy = random(-2,2);
+	this.vy = 0;//random(-2,2);
 	// > diametre
 	this.diameter = random(5,10);
 	// > flag pour dire s'il est sorti ou non de l'écran

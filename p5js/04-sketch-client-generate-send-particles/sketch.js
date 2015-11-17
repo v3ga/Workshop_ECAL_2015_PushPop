@@ -1,20 +1,32 @@
 // --------------------------------------------
-var URL_SERVER = "ws://MacBook-Pro-de-Julien-2.local:12345/p5websocket";
-var IP_VOISIN = "192.168.10.118";
+var URL_SERVER = "ws://10.192.250.138:12345/p5websocket";
+var IP_VOISIN = "10.192.232.32";
 
 // Tableau qui va contenir une liste d'objets
 var listObjects = [];
 
+// Timing
+var time = 0;
+var timeStart = 0;
 // --------------------------------------------
 function setup()
 {
   	createCanvas(500, 500);
 	connect(URL_SERVER);
+	time = timeStart = millis();
 }
 
 // --------------------------------------------
 function draw()
 {
+	time = millis();
+	if ((time - timeStart)>=250)
+	{
+		timeStart = millis();
+		var object = new MyObject(width/2, random(height/2-150,height/2+150));
+		listObjects.push( object );
+	}
+
 	background(255);
 	for (var i=listObjects.length-1;i>=0;i--)
 	{	

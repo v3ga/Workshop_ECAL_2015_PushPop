@@ -58,12 +58,12 @@ void websocketOnMessage(WebSocketConnection con, String msg)
   }
   else if (msgJson.hasKey("ip"))
   {
-    ArrayList<WebSocketConnection> listClients = getAllWebSocketConnectionByIP( msgJson.getString("ip") );   
+    ArrayList<WebSocketConnection> listClients = socket.getAllWebSocketConnectionByIP( msgJson.getString("ip") );   
     for (WebSocketConnection client : listClients)
     {
       if (client != null)
       {
-        // println("sending to destination "+msgJson.getString("ip"));
+         println("sending to destination "+msgJson.getString("ip"));
         client.send( msg );
       }
     }
