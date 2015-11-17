@@ -10,6 +10,7 @@ Travailler, forger, transformer, traiter, triturer, communiquer des données ent
 * Input/Output de Terry Timely & Park Pictures — https://vimeo.com/141567420
 * Translations de Pauline Gourlet — http://paulinegourlet.com/translations.php
 * Émissions « Tac au tac » dans les années 70 — https://www.youtube.com/watch?v=hIVbL-Vv0is
+* Mécaniques discursives — http://www.mecaniques-discursives.com/
 
 
 ### Scénographie 
