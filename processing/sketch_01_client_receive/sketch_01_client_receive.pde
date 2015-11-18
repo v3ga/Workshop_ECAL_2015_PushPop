@@ -45,7 +45,7 @@ void draw()
     float y = msg.getFloat("y");
     
     // On utilise ces variables pour dessiner
-    ellipse(x,y,50,50);
+    rect(x,y,50,50);
   }
 }
 
