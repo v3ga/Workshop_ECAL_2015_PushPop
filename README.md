@@ -73,3 +73,5 @@ Quelques librairies à exploiter :
   * Shake.js — https://github.com/alexgibson/shake.js/ — détection évènement «shake»
   * Gyrojs — http://tomg.co/gyrojs 
   * p5.speech — http://abilitylab.nyu.edu/p5.js-speech/
+
+### Photos
