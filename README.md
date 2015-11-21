@@ -23,8 +23,6 @@ Imaginer une installation avec des écrans (ordinateurs, téléphones portables,
 
 Le traitement des données ne sera pas instantané, un délai entre la réception et l’émission sera introduit et pourra être influencé / perturbé par des interactions externes.
 
-![alt Atelier Processing Toulouse](https://farm9.staticflickr.com/8532/8581354948_177de9c03b_z.jpg)
-
 
 ### Programmation
 Les sketches communiqueront entre eux par le biais d'envoi de données à un serveur dont le rôle sera d'écouter les messages entrants et de les redistribuer. Un «client» est un sketch qui se connecte au serveur pour communiquer des données à d'autres clients. Le format d'échange de données est le JSON.
@@ -76,3 +74,5 @@ Quelques librairies à exploiter :
 
 ### Photos
 ![Setup](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_installation_finale_cadavre_exquis.JPG)
+![Debug](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_installation_finale_cadavre_exquis_debug.JPG)
+
