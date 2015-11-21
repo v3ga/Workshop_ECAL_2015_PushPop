@@ -75,3 +75,4 @@ Quelques librairies à exploiter :
   * p5.speech — http://abilitylab.nyu.edu/p5.js-speech/
 
 ### Photos
+![Setup](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_installation_finale_cadavre_exquis.JPG)
