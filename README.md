@@ -25,7 +25,8 @@ Imaginer une installation avec des écrans (ordinateurs, téléphones portables,
 * chaque participant doit recevoir des données d'un participant «précédent».
 * chaque participant doit traiter visuellement les données reçues et transmettre des données au participant «suivant».
 * le premier participant de la chaîne est libre du choix des modalités des données entrantes.
-
+* le dernier participant de la chaîne est libre du choix du format de données sortantes.
+* 
 Le traitement des données ne sera pas instantané, un délai entre la réception et l’émission sera introduit et pourra être influencé / perturbé par des interactions externes.
 
 
