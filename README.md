@@ -81,6 +81,7 @@ Quelques librairies à exploiter :
 ### Photos
 ![Setup](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_installation_finale_cadavre_exquis.JPG)
 ![Debug](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_installation_finale_cadavre_exquis_debug.JPG)
-![Debug](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Installation_finale_cadavre_exquis.jpg)
-![Debug](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_classroom_01.jpg)
+![Final](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Installation_finale_cadavre_exquis.jpg)
+![Classroom](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_classroom_01.jpg)
+![Classroom](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_classroom_02.jpg)
 
