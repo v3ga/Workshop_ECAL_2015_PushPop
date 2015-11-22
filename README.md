@@ -1,5 +1,7 @@
 # Push Pop
-*Atelier de création par le code à l'ECAL du 16 au 20 Novembre 2015 avec les étudiants de première année en Media & Interaction design*
+*Atelier de création par le code à l'ECAL du 16 au 20 Novembre 2015 avec les étudiants de première année en Media & Interaction design ( http://ecal.ch/fr/1103/formations/bachelor/media-interaction-design/projets-workshops )*
+
+
 
 **Assistant** // Tibor Udvari — https://twitter.com/tiborudvari
 
