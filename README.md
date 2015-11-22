@@ -1,7 +1,13 @@
 # Push Pop
 *Atelier de création par le code à l'ECAL du 16 au 20 Novembre 2015 avec les étudiants de première année en Media & Interaction design*
 
-*En collaboration avec Cyril Diagne & Tibor Udvari.*
+**Assistant** // Tibor Udvari — https://twitter.com/tiborudvari
+
+**Organisation** // Cyril Diagne — http://cyrildiagne.com/
+
+**Étudiants** // Pierre Allain-Longeval, André Andrade, Giulio Barresi, Mathilde Colson, Pierry Jacquillard — https://twitter.com/pjaquillard, Adrien Kaeser, Luca Kasper, Kelian Maissen, David Nguyen, Mathieu Palauqui, Justine Rieder, Callum Ross, Guillaume Simmen, Fabiola Soavelo, Corentin Vignet 
+
+### Thème 
 
 Travailler, forger, transformer, traiter, triturer, communiquer des données entre machines programmables pour fabriquer une installation visuelle et sonore sur le principe du cadavre exquis.
 
