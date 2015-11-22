@@ -13,7 +13,6 @@ Travailler, forger, transformer, traiter, triturer, communiquer des données ent
 
 ![alt André Breton](http://masmoulin.blog.lemonde.fr/files/2012/02/Cadavre-exquis_Andr%C3%A9-Breton-Goemans-Camille-Jacques-Pr%C3%A9vert-Yves-Tanguy.png)
 
-
 * https://fr.wikipedia.org/wiki/Cadavre_exquis_(jeu)#Arts_graphiques
 * Input/Output de Terry Timely & Park Pictures — https://vimeo.com/141567420
 * Translations de Pauline Gourlet — http://paulinegourlet.com/translations.php
