@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <!--<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>-->
+  <script src="libs/sc_sdk.js"></script>
+
+  <script language="javascript" type="text/javascript" src="libs/pushpop.js"></script>
+
+  <script language="javascript" type="text/javascript" src="libs/p5.js"></script>
+
+  <script language="javascript" type="text/javascript" src="sketch_mane.js"></script>
+
+  <style> body {padding: 0; margin: 0;} </style>
+  <script>
+  window.scok = false;
+  SC.initialize({
+    client_id: '02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea',
+    redirect_uri: 'http://example.com/callback'
+  });
+
+  //SC.resolve("https://soundcloud.com/fantasticmrfox/fantastic-mr-fox-feat-denai-moore-on-my-own").then(function(tracks){
+  //SC.resolve("hhttps://soundcloud.com/mb-productions94/scaryhorror-sound-effectshalloween-soundtrack").then(function(tracks){
+    SC.resolve("https://soundcloud.com/xlr8r/dj-earl-wtf-life-sent-it-up").then(function(tracks){
+    window.sctrack = tracks;
+
+    waveformjsurl = "https://mrvv.net/beta/waveform/proxy.php?url="+encodeURIComponent("http://www.waveformjs.org/w?url="+tracks.waveform_url);
+
+    //$.getJSON("data2.json", function(json) {
+    $.getJSON(waveformjsurl, function(json) {
+      window.waveformjsdata = json;
+      window.scok = true;
+    });
+  });
+  </script>
+</head>
+<body>
+</body>
+</html>
