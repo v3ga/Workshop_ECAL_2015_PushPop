@@ -3,7 +3,7 @@
 
 **Assistant** // Tibor Udvari — https://twitter.com/tiborudvari
 
-**Organisation** // Cyril Diagne — http://cyrildiagne.com/
+**Organisation** // Cyril Diagne — http://cyrildiagne.com
 
 **Étudiants** // Pierre Allain-Longeval, André Andrade, Giulio Barresi, Mathilde Colson, Pierry Jacquillard — https://twitter.com/pjaquillard, Adrien Kaeser, Luca Kasper, Kelian Maissen, David Nguyen, Mathieu Palauqui, Justine Rieder, Callum Ross, Guillaume Simmen, Fabiola Soavelo, Corentin Vignet 
 
@@ -80,4 +80,6 @@ Quelques librairies à exploiter :
 ### Photos
 ![Setup](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_installation_finale_cadavre_exquis.JPG)
 ![Debug](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_installation_finale_cadavre_exquis_debug.JPG)
+![Debug](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Installation_finale_cadavre_exquis.jpg)
+![Debug](http://v3ga.github.io/Images/Workshop_ECAL_2015_PushPop/Setup_classroom_01.jpg)
 
