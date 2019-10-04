@@ -73,7 +73,7 @@ function sendIP(ip,data){...}
 
 #### Javascript
 Quelques librairies à exploiter : 
-* Matter.js — http://brm.io/matter-js-demo/ — librairie simulation physique en 2D
+* Matter.js — http://brm.io/matter-js/ — librairie simulation physique en 2D
 
 * **Mobile**
   * Shake.js — https://github.com/alexgibson/shake.js/ — détection évènement «shake»
