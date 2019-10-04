@@ -13,7 +13,7 @@
 
 Travailler, forger, transformer, traiter, triturer, communiquer des données entre machines programmables pour fabriquer une installation visuelle et sonore sur le principe du cadavre exquis.
 
-![alt André Breton](http://masmoulin.blog.lemonde.fr/files/2012/02/Cadavre-exquis_Andr%C3%A9-Breton-Goemans-Camille-Jacques-Pr%C3%A9vert-Yves-Tanguy.png)
+![alt André Breton](images/andre_breton_cadravre_exquis.png)
 
 * https://fr.wikipedia.org/wiki/Cadavre_exquis_(jeu)#Arts_graphiques
 * Input/Output de Terry Timely & Park Pictures — https://vimeo.com/141567420
@@ -28,7 +28,7 @@ Imaginer une installation avec des écrans (ordinateurs, téléphones portables,
 * chaque participant doit traiter visuellement les données reçues et transmettre des données au participant «suivant».
 * le premier participant de la chaîne est libre du choix des modalités des données entrantes.
 * le dernier participant de la chaîne est libre du choix du format de données sortantes.
-* 
+
 Le traitement des données ne sera pas instantané, un délai entre la réception et l’émission sera introduit et pourra être influencé / perturbé par des interactions externes.
 
 
